@@ -1,0 +1,53 @@
+{
+  "name": "memoryos",
+  "version": "1.0.0",
+  "description": "Institutional memory engine — capture the why behind every decision",
+  "main": "dist/index.js",
+  "bin": {
+    "memoryos": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts start",
+    "start": "node dist/index.js start",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "@notionhq/client": "^2.2.15",
+    "@slack/web-api": "^7.3.4",
+    "@slack/socket-mode": "^1.3.3",
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "imap": "^0.8.19",
+    "js-yaml": "^4.1.0",
+    "mailparser": "^3.7.1",
+    "natural": "^8.0.1",
+    "neo4j-driver": "^5.22.0",
+    "node-cron": "^3.0.3",
+    "openai": "^4.52.7",
+    "p-limit": "^5.0.0",
+    "pino": "^9.3.1",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/imap": "^0.8.40",
+    "@types/js-yaml": "^4.0.9",
+    "@types/mailparser": "^3.4.4",
+    "@types/node": "^20.14.12",
+    "@types/node-cron": "^3.0.11",
+    "@types/uuid": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
