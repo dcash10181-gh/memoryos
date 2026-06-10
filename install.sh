@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # ============================================================
 # MemoryOS — One-Line Installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/memoryos/core/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/dcash10181-gh/memoryos/main/install.sh | bash
 # ============================================================
 set -euo pipefail
 
 MEMORYOS_VERSION="1.0.0"
 INSTALL_DIR="${MEMORYOS_INSTALL_DIR:-$HOME/.memoryos}"
 BIN_DIR="/usr/local/bin"
-REPO="https://github.com/memoryos/core"
+REPO="https://github.com/dcash10181-gh/memoryos"
 GREEN='\033[0;32m' YELLOW='\033[1;33m' RED='\033[0;31m' NC='\033[0m' BOLD='\033[1m'
 
 banner() {

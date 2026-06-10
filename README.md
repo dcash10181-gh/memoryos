@@ -1,11 +1,13 @@
 # MemoryOS
 
 > **Your company's institutional brain — self-hosted, private, one-line install.**
+>
+> *A working architectural prototype exploring passive knowledge capture as a queryable property graph.*
 
 Every year your company loses millions in institutional knowledge: engineers who leave and take context with them, Slack threads that die, Jira tickets written with no "why," PRs merged without rationale. MemoryOS captures it all passively and makes it queryable by any AI model.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/memoryos/core/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/dcash10181-gh/memoryos/main/install.sh | bash
 ```
 
 ---
@@ -69,7 +71,7 @@ MemoryOS is a lightweight daemon that:
 ### 1. Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/memoryos/core/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/dcash10181-gh/memoryos/main/install.sh | bash
 ```
 
 Requires: Node.js 18+, Docker. That's it.
@@ -169,12 +171,15 @@ EDGES
 
 ## Connector Status
 
+> **Note:** MemoryOS is a working architectural prototype. The connectors marked *Implemented* below are functional against their respective APIs; "Beta" and "Roadmap" items are stubbed or planned. This is a design-and-build proof of concept, not a hardened production deployment.
+
+
 | Connector | Tier | Status |
 |-----------|------|--------|
-| Slack | 1 — High-signal conversational | ✅ Production |
-| Email (IMAP/Gmail) | 1 — High-signal conversational | ✅ Production |
-| GitHub (PRs, Issues, Commits) | 2 — Decision tracking | ✅ Production |
-| Jira | 2 — Decision tracking | ✅ Production |
+| Slack | 1 — High-signal conversational | ✅ Implemented |
+| Email (IMAP/Gmail) | 1 — High-signal conversational | ✅ Implemented |
+| GitHub (PRs, Issues, Commits) | 2 — Decision tracking | ✅ Implemented |
+| Jira | 2 — Decision tracking | ✅ Implemented |
 | Confluence | 3 — Documentation | 🔧 Beta |
 | Notion | 3 — Documentation | 🔧 Beta |
 | Linear | 2 — Decision tracking | 📅 Roadmap |
